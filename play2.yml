@@ -1,7 +1,7 @@
 ---
 - name: Create group and user
   hosts: localhost
-  become: yes
+  become: true
   gather_facts: no
   tasks:
     - name: Create group
