@@ -1,6 +1,6 @@
 ---
 - name: Create group and user
-  hosts: all
+  hosts: localhost
   become: yes
   gather_facts: no
   tasks:
