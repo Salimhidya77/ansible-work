@@ -4,12 +4,6 @@
   become: true
   gather_facts: no
   tasks:
-    - name: Create group
-      group:
-        name: group1
-        state: present
-    
-    - name: Create user
-      user:
-        name: user1
-        state: present
+    - name: print message
+      debug:
+        msg: hello for every one
