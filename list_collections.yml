@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  gather_facts: false
+
+  tasks:
+
+    - name: Show collections
+      command: ansible-galaxy collection list
+      register: result
+
+    - debug:
+        var: result.stdout_lines
